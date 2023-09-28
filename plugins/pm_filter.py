@@ -273,7 +273,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=f'https://t.me/+W5plh7_tP19lZjg1')
+        InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=f'https://t.me/How_Tutorial')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -762,7 +762,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                               InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                            ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/AKDverse")
+                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Aham214")
                              ]
                             ]
                         )
@@ -834,7 +834,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/RR_backup")
+                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Aham214")
                  ]
                 ]
             )
@@ -1388,13 +1388,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "support_grp":
         buttons = [[
-            InlineKeyboardButton('🫵 sᴜʙsᴄʀɪʙᴇ​ 🫵', url='https://t.me/RR_backup')
+            InlineKeyboardButton('🫵 sᴜʙsᴄʀɪʙᴇ​ 🫵', url='https://t.me/+9DAPl0p1iJ1lZjdk')
             ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ​', url='https://t.me/+ksHPXYxbE3swZGVl'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ​', url='https://t.me/+C0wJkPOjW6lmODI9')
+            InlineKeyboardButton('ɢʀᴏᴜᴘ​', url='https://t.me/+8ROwp-7WLSI2NjI8'),
+            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ​', url='https://t.me/+TNfxsmOgN7k2YjVk')
             ],[      
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ​', url='https://t.me/+ksHPXYxbE3swZGVl'),
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs​', url='https://t.me/RR_movie_backup')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ​', url='https://t.me/+TNfxsmOgN7k2YjVk'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs​', url='https://t.me/+9DAPl0p1iJ1lZjdk')
             ],[
             InlineKeyboardButton('✇ ʜᴏᴍᴇ ✇', callback_data="start")
         ]] 
@@ -2601,7 +2601,7 @@ async def auto_filter(client, msg, spoll=False):
                 ]
             )
     btn.insert(0, [
-        InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=f'https://t.me/+W5plh7_tP19lZjg1')
+        InlineKeyboardButton('ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ', url=f'https://t.me/How_Tutorial')
     ])
 
     if offset != "":
