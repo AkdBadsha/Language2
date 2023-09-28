@@ -19,7 +19,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = "21748181"
 API_HASH = "b1d962414e186e0778911f3183feac33"
-BOT_TOKEN = "6696081594:AAHgaNBmPLcO4YofVJEBDS5TIGNeBhxNb80"
+BOT_TOKEN = "5535495243:AAHOn2UwQzUICOKBijd9BFsldLQgRtr-83E"
 
 #SESSION = environ.get('SESSION', 'Media_search')
 #API_ID = int(environ['API_ID'])
@@ -37,8 +37,8 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b9900
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1980321098 5645800514').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001948668717').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1980321098').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001525431593').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_grp = environ.get('AUTH_GROUP')
@@ -49,8 +49,8 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Vashnavi:pass@cluster0.bj4ryvt.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "webmn")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Custom Chats
@@ -77,19 +77,19 @@ JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
 HOW_TO_VERIFY = environ.get("HOW_TO_VERIFY", "https://t.me/How_Tutorial")
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'urlspay.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'a0e58e0dd118bb1b8fd98cfb29198f50b0ebd48f')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'Urlshorten.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '207a90217dfca7d5ccfa340dba8f8d4cf24b7b04')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 NO_RESULTS_MSG = bool(environ.get('NO_RESULTS_MSG', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "False")), False)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+ksHPXYxbE3swZGVl')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+C0wJkPOjW6lmODI9')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Movies_groupchat')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/anime_buzz')
 MSG_ALRT = environ.get('MSG_ALRT', 'Get Content From This Bot')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001936808456'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+ksHPXYxbE3swZGVl')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001718789952'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/Movies_groupchat')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
